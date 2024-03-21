@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/CSS/forms copy.css">
+</head>
+
+<body>
+    <div class="principal">
+        <div class="izquierda">
+            <ol class="lista-izq">
+                <li><a href="#">Encabezado del CV</a></li>
+                <li><a href="#">Historial Laboral</a></li>
+                <li><a href="#">Formacion</a></li>
+                <li><a href="#">Aptitudes</a></li>
+                <li><a href="#">Resumen Profesional</a></li>
+                <li><a href="#">Finalizar</a></li>
+            </ol>
+        </div>
+        <div class="derecha">
+            <div>
+                <h1 align="left" class="encabezado-cv">¿C&oacutemo pueden contactarte los empleadores?</h1>
+                <p align="left" class="">Te recomendamos que incluyas un Correo Electronico</p>
+            </div>
+            <div class="formulario">
+                <div class="foto">
+                    <figure>
+                        <img src="/IMG/Perfil.png" alt="Foto" width="100%">
+                    </figure>
+                    <input type="file" id="fotoInput" style="display: none;">
+                    <button onclick="cargarFoto()" class="boton-foto">
+                        + Cargar foto
+                    </button>
+
+                    <script>
+                        function cargarFoto() {
+                            document.getElementById('fotoInput').click();
+                        }
+                    </script>
+                </div>
+
+                <div class="formulario-campos">
+                    <form action="#" method="post">
+                        <div class="form-data">
+                            <div class="fila">
+                                <div class="columna-50">
+                                    <label for="Nombre">Nombre</label>
+                                    <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" class="caja-tex">
+                                </div>
+                                <div class="columna-50">
+                                    <label for="Apellido">Apellido</label>
+                                    <input type="text" name="Apellido" id="Apellido" placeholder="Apellido"
+                                        class="caja-tex">
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna-50">
+                                    <label for="Calle">Calle</label>
+                                    <input type="text" name="Calle" id="Calle" placeholder="Calle" class="caja-tex">
+                                </div>
+                                <div class="columna-50">
+                                    <label for="País">País</label>
+                                    <input type="text" name="País" id="País" placeholder="País" class="caja-tex">
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna-33">
+                                    <label for="Código Postal">Código Postal</label>
+                                    <input type="text" name="Código Postal" id="Código Postal"
+                                        placeholder="Código Postal" class="caja-texto">
+                                </div>
+                                <div class="columna-33">
+                                    <label for="Departamento">Departamento</label>
+                                    <input type="text" name="Departamento" id="Departamento" placeholder="Departamento"
+                                        class="caja-texto">
+                                </div>
+                                <div class="columna-33">
+                                    <label for="Ciudad">Ciudad</label>
+
+                                    <input type="texto" name="Ciudad" id="Ciudad" placeholder="Ciudad"
+                                        class="caja-texto">
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna-50">
+                                    <label for="Teléfono">Teléfono</label>
+                                    <input type="text" name="Teléfono" id="Teléfono" placeholder="Teléfono"
+                                        class="caja-tex">
+                                </div>
+                                <div class="columna-50">
+                                    <label for="Correo electronico">Correo electronico</label>
+                                    <input type="text" name="Correo electronico" id="Correo electronico"
+                                        placeholder="Correo electronico" class="caja-tex">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="botones-inf">
+                <button class="atras">Atras</button>
+                <button class="siguiente">Siguiente</button>
+            </div>
+
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+}
+
+.principal {
+    display: flex;
+    height: 100%;
+}
+
+.izquierda {
+    width: 12%;
+    height: auto;
+    padding: 80px 15px;
+    background-color: rgb(1, 1, 26);
+}
+
+ol {
+    list-style: none;
+    counter-reset: item;
+}
+
+li {
+    counter-increment: item;
+    margin: 0;
+    padding: 5px 0 !important;
+}
+
+li::before {
+    margin-right: 10px;
+    content: counter(item);
+    background: rgb(1, 1, 26);
+    border-radius: 100%;
+    color: white;
+    border: 1px solid white;
+    width: 13px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+}
+
+li:hover::before {
+    background-color: burlywood;
+    color: rgb(1, 1, 26);
+}
+
+.lista-izq a {
+    font-size: 10px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+
+.derecha {
+    width: 88%;
+    background-color: #ffff;
+    height: 100%;
+    padding: 5% 20%;
+}
+
+.encabezado-cv {
+    padding: 10px 0px;
+    color: rgb(1, 1, 26);
+    font-size: 26px;
+}
+
+a:hover {
+    color: burlywood;
+}
+
+li {
+    padding: 10px;
+}
+
+form {
+    text-align: center;
+}
+
+.caja-texto {
+    padding: 5px;
+    border: 1px solid rgb(122, 122, 122);
+    background-color: rgb(255, 255, 255);
+    color: rgb(35, 35, 35);
+    width: 100%;
+}
+
+.caja-tex {
+    padding: 5px;
+    border: 1px solid rgb(122, 122, 122);
+    background-color: rgb(255, 255, 255);
+    color: rgb(35, 35, 35);
+    width: 100%;
+}
+
+.formulario {
+    display: flex;
+    margin: 5% 0;
+}
+
+.foto {
+    width: 15%;
+    display: block;
+}
+
+.boton-foto {
+    border: unset;
+    background-color: unset;
+    font-size: 10px;
+    color: rgb(1, 1, 26);
+    text-align: center;
+    width: 100%;
+    margin: 15px 0px;
+  }
+  
+  .boton-foto:hover {
+    background-color: rgb(1, 1, 26);
+    color: white;
+    border-radius: 30px;
+  }
+
+.formulario-campos {
+    width: 85%;
+    display: flex;
+    margin-left: 30px;
+}
+
+.form-data {
+    display: block;
+}
+
+.fila {
+    width: 100%;
+    display: flex;
+    margin: 10px 0px;
+}
+
+.columna-50 {
+    width: 50%;
+    display: block;
+    text-align: left;
+    margin: 0px 5px;
+}
+
+.columna-50 label {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.columna-33 {
+    width: 33%;
+    display: block;
+    text-align: left;
+    margin: 0px 5px;
+}
+
+.columna-33 label {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.botones-inf {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.atras {
+    border: 1px solid rgb(1, 1, 26);
+    padding: 5px 25px;
+    border-radius: 30px;
+    background-color: unset;
+    color: rgb(1, 1, 26);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.atras:hover {
+    background-color: rgb(1, 1, 26);
+    color: white;
+}
+
+.siguiente {
+    border: 1px solid rgb(1, 1, 26);
+    padding: 5px 25px;
+    border-radius: 30px;
+    background-color: rgb(1, 1, 26);
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.siguiente:hover {
+    background-color: white;
+    color: rgb(1, 1, 26);
+}
